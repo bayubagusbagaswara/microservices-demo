@@ -2,7 +2,7 @@ package com.bayu.customer.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public record CustomerRegistration(
+public record CustomerRegistrationRequest(
         @JsonProperty("first_name") String firstName,
         @JsonProperty("last_name") String lastName,
         String gender,
