@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "customer")
 @Data
@@ -39,5 +41,7 @@ public class Customer {
     @Column(name = "phone_number", unique = true)
     private String phoneNumber;
 
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
 
 }
